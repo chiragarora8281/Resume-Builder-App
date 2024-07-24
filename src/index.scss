@@ -1,0 +1,91 @@
+//global css
+@use "../src/components/Home/scss/partials/_global";
+
+//nav css
+@use "../src/components/Home/scss/partials/nav";
+
+//banner css
+@use "../src/components/Home//scss/partials/banner";
+
+//template css
+@use "../src/components/Home/scss/partials/template";
+
+//pageNotFound
+@use "../src/components/Home/scss/partials/pageNot";
+
+//footer css
+@use "../src/components/Home/scss/partials/footer";
+
+//Faq pages
+@use "../src/components/Home/scss/partials/faq";
+
+//Template 1 scss
+@use "../src/components/Home/scss/partials/template1";
+
+// Template 2 scss
+@use "../src/components/Home/scss/partials/template2";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+//media queries--------------------------------------
+@media (min-width: 1300px) {
+  .paraAbout p {
+    font-size: 1.4rem;
+  }
+  .tempHeading h1 {
+    font-size: 2.4rem;
+    margin-top: 2em;
+  }
+  .templates {
+    margin-top: 7em;
+  }
+}
+
+@media (min-width: 900px) {
+  .paraAbout p {
+    font-size: 1.4rem;
+  }
+  .tempHeading h1 {
+    font-size: 2.4rem;
+    margin-top: 2em;
+  }
+  .templates {
+    margin-top: 7em;
+  }
+}
+
+@media (max-width: 900px) {
+  .bannerContent h1 {
+    font-size: 2.4rem;
+    color: rgba(26, 26, 26, 0.973);
+  }
+  .paraAbout p {
+    padding-top: 1.5rem;
+  }
+  .tempContainer {
+    top: 5em;
+  }
+  .main-container {
+    height: 131vh;
+  }
+}

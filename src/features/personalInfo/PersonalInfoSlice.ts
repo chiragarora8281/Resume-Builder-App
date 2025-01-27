@@ -9,9 +9,9 @@ interface PersonalInfoState {
 }
 
 const initialState: PersonalInfoState = {
-  firstName: "Md",
-  lastName: "Imran",
-  email: "imran@example.com",
+  firstName: "Chirag",
+  lastName: "Arora",
+  email: "chirag@example.com",
   phone: 9999999999,
   address: "123, first street, Bangalore",
 };
